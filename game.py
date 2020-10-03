@@ -15,7 +15,7 @@ class Game:
         guess=input() #Create a function to check quality
                         #To prevent bad inputs
                         #But also to check that same is not entered twice to protect self.revealed
-        self.data.update(guess)
+        #self.data.update(guess)
         return guess
     
     def check_guess(self, guess):
@@ -29,7 +29,7 @@ class Game:
 
     def check_endgame(self,guessed): #Check is different depending on if the last coup was winning or not
         if(guessed):
-            if(len(self.data.revealed)==len(set(self.data.word))):
+            if(len(set(self.data.revealed))==len(set(self.data.word))):
                 self.endgame=1
                 print('Congratulations you won with a score of ', self.game_score, ' !')
         else:

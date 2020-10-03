@@ -9,15 +9,15 @@ username=input()
 
 player1=player.Player(username)
 print('Do you want to start playing ?')
-play=input()
+play=int(input())
 libs.random.seed()
 nb_games=0
 while(play!=0):
-    libs.random.seed(nb_games)
     index=libs.random.randint(0,15) #Size of dictionary hardcoded. Should evolve
-    word=data.Data(data.Data.get_word(index))
-    print('Debug: ', word)
-    current_game=game.Game(player,word)
+    revealed=[]
+    hidden_word=data.Data(data.Data.get_word(index),revealed)
+    #print('Debug: ', hidden_word.word)
+    current_game=game.Game(player,hidden_word)
     current_game.data.display()
     while(current_game.endgame==0):
         guess=current_game.get_guess()
@@ -25,3 +25,4 @@ while(play!=0):
     print('Do you want to keep playing ?')
     play=int(input())
     nb_games+=1
+print('Game Over')

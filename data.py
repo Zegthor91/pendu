@@ -20,6 +20,7 @@ class Data:
         print(hidden_word)
 
     def update(self,guess):
+        print('Update')
         if guess in self.word:
             self.revealed.append(guess)
             return True
