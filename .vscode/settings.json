@@ -1,3 +1,6 @@
 {
     "python.pythonPath": "C:\\Program Files\\Python37\\python.exe"
+	"python.linting.pydocstyleArgs": ["--ignore=D400"]
+	"python.linting.pydocstyleArgs": ["--ignore=D4"]
+	"python.linting.pycodestyleArgs": ["--ignore=E303"]
 }

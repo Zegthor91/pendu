@@ -1,7 +1,6 @@
 import player
 import data
 class Game:
-
     def __init__(self,player,data,score=8):
         self.player=player
         self.data=data
@@ -10,14 +9,27 @@ class Game:
         print('Game Started')
         print('='*20)
 
-    def get_guess(self):
-        print('What\'s your guess ?')
-        guess=input() #Create a function to check quality
-                        #To prevent bad inputs
-                        #But also to check that same is not entered twice to protect self.revealed
-        #self.data.update(guess)
+    def get_guess(self): 
+        sanity=False
+        while(not(sanity)):
+            print('What\'s your guess ?')
+            guess=input().lower() 
+            sanity=self.guess_sanitycheck(guess)
         return guess
-    
+
+    def guess_sanitycheck(self,guess):
+        sanity=True
+        if (not(guess.isalpha())):
+            print('You have entered a bad characther')
+            sanity=False
+        if guess in self.data.revealed:
+            print('You have already guessed that letter')
+            sanity=False
+        if guess in self.data.mistakes:
+            print('You have already made that mistake')
+            sanity=False
+        return sanity
+  
     def check_guess(self, guess):
         if(self.data.update(guess)):
             guessed=True
@@ -27,13 +39,22 @@ class Game:
         self.data.display()
         self.check_endgame(guessed)
 
-    def check_endgame(self,guessed): #Check is different depending on if the last coup was winning or not
-        if(guessed):
+    def check_endgame(self,guessed): 
+        if(guessed):#Check is different depending on if the last coup was winning or not
             if(len(set(self.data.revealed))==len(set(self.data.word))):
                 self.endgame=1
+                # self.player.games+=1
+                # self.player.player_score+=self.game_score
+                self.player.update(self.endgame,self.game_score) #Update player statistics
                 print('Congratulations you won with a score of ', self.game_score, ' !')
         else:
             if(self.game_score==0):
                 self.endgame=-1
+                #self.player.games+=1
+                self.player.update(self.endgame,self.game_score) #Update player statistics
                 print('Sorry you lost !')
+                print('The word was : ') # Make optional eventually
+                self.data.reveal_word()
+        #self.player.update(self.endgame,self.game_score) #Update player statistics
+        return self.endgame
 

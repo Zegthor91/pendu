@@ -14,3 +14,17 @@ life
 change
 customer
 success
+hangman
+game
+motivation
+passion
+laptop
+family
+school
+education
+company
+goal
+football
+science
+mathematics
+physics
