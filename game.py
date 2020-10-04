@@ -133,6 +133,7 @@ class Game:
         """
         Stores the game statistics in the local database
         """
+        
         games=libs.pd.read_csv('database/games.csv', index_col=0)
         newGame=libs.pd.DataFrame([[
             self.player.username,

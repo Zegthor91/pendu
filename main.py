@@ -8,8 +8,8 @@ print('What \'s your username ?')
 username=input()
 user=player.Player.get_user(username)
 if user is not None:
-    player1=player.Player(user.username,user.score,user.nb_games,
-    user.wins, user.losses)
+    player1=player.Player(user.username.to_numpy()[0],user.score.to_numpy()[0],
+    user.nb_games.to_numpy()[0],user.wins.to_numpy()[0], user.losses.to_numpy()[0])
 else:
     player1=player.Player(username)
 print('Do you want to start playing ?')

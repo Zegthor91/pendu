@@ -89,7 +89,8 @@ class Player:
             print('User has been created then.')
             return None
         else:
-            return user
+            user.drop
+            return user #Be careful returns DataFrame !!!
     get_user=staticmethod(get_user)
 
     def create_user(cls,username):
@@ -100,6 +101,7 @@ class Player:
         ----------
         username: str
         """
+
         users=libs.pd.read_csv('database/users.csv', index_col=0)
         newUser=libs.pd.DataFrame([[username,0,0,0,0]])
         newUser.columns=users.columns
@@ -112,11 +114,14 @@ class Player:
         """
         Stores the user statistics in the local database
         """
-        
+
         users=libs.pd.read_csv('database/users.csv', index_col=0)
-        users.loc[users.username==self.username,'score']=self.player_score
-        users.loc[users.username==self.username,'nb_games']=self.games
-        users.loc[users.username==self.username,'wins']=self.wins
-        users.loc[users.username==self.username,'losses']=self.losses
+        print('username:', self.username)
+        print('username:', str(self.username))
+        print(users)
+        users.loc[users['username']==str(self.username),'score']=self.player_score
+        users.loc[users['username']==str(self.username),'nb_games']=self.games
+        users.loc[users['username']==str(self.username),'wins']=self.wins
+        users.loc[users['username']==str(self.username),'losses']=self.losses
         users.index.name='userID'
         users.to_csv('database/users.csv')
