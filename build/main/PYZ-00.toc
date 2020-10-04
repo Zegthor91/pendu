@@ -340,21 +340,53 @@
    'c:\\program '
    'files\\python37\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
+  ('pkg_resources._vendor.packaging.utils',
    'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging',
    'c:\\program '
    'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
+  ('pkg_resources._vendor',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.packaging.version',
    'c:\\program '
    'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.six',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'c:\\program '
@@ -378,38 +410,6 @@
    'PYMODULE'),
   ('ctypes.macholib.framework',
    'c:\\program files\\python37\\lib\\ctypes\\macholib\\framework.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.six',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
   ('sysconfig', 'c:\\program files\\python37\\lib\\sysconfig.py', 'PYMODULE'),
   ('_osx_support',
@@ -527,11 +527,11 @@
   ('pandas',
    'C:\\Users\\viann\\AppData\\Roaming\\Python\\Python37\\site-packages\\pandas\\__init__.py',
    'PYMODULE'),
-  ('pandas._libs.tslibs',
-   'C:\\Users\\viann\\AppData\\Roaming\\Python\\Python37\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
-   'PYMODULE'),
   ('pandas._libs.window',
    'C:\\Users\\viann\\AppData\\Roaming\\Python\\Python37\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'C:\\Users\\viann\\AppData\\Roaming\\Python\\Python37\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
    'PYMODULE'),
   ('numpy',
    'C:\\Users\\viann\\AppData\\Roaming\\Python\\Python37\\site-packages\\numpy\\__init__.py',
@@ -691,37 +691,17 @@
   ('setuptools',
    'c:\\program files\\python37\\lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
+  ('setuptools._vendor.packaging.specifiers',
    'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.pyparsing',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging._compat',
    'c:\\program '
    'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.requirements',
+  ('setuptools._vendor.packaging.__about__',
    'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
-   'c:\\program '
-   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('setuptools._vendor.six',
    'c:\\program '
@@ -735,9 +715,29 @@
    'c:\\program '
    'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
+  ('setuptools._vendor.pyparsing',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'PYMODULE'),
   ('setuptools._vendor.packaging',
    'c:\\program '
    'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.requirements',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'c:\\program '
+   'files\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'c:\\program files\\python37\\lib\\site-packages\\setuptools\\msvc.py',
