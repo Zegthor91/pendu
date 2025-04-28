@@ -28,5 +28,8 @@ football
 science
 mathematics
 physics
+exam
+computer
+engineer
 data
 framework
