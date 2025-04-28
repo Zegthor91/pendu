@@ -28,3 +28,5 @@ football
 science
 mathematics
 physics
+exam
+computer
